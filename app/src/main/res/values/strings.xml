@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyqqDemo</string>
+
+    <string name="home_label_message">"消息"</string>
+    <string name="home_label_contacts">"联系人"</string>
+    <string name="home_label_status">"动态"</string>
+</resources>

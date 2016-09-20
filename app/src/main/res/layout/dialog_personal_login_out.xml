@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dialog_login_out"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sp_16"
+            android:gravity="center"
+            android:text="退出后，你将收不到相关的还款提醒，为了避免逾期，请谨慎操作。"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/dialog_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dialog_cancel"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="1dp">
+        
+        <TextView 
+            android:id="@+id/loginouttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_sp_18"
+            android:gravity="center"
+            android:text="退出登录"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_marginTop="4dp">
+        
+        <TextView 
+            android:id="@+id/loginoutcanceltext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sp_18"
+            android:text="取消"/>
+    </LinearLayout>
+</RelativeLayout>

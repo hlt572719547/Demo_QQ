@@ -1,0 +1,2 @@
+include ':app', ':slidemenu'
+project(':slidemenu').projectDir = new File('library')
