@@ -16,12 +16,27 @@ import com.android.volley.toolbox.Volley;
 public class AppApplication extends Application {
 
     public static RequestQueue queues;
-    private static AppApplication mIns = null;
+    public static final AppApplication INSTANCE;
+
+    static {
+        AppApplication app = null;
+        try {
+            app = (AppApplication) Class.forName("android.app.AppGlobals").getMethod("getInitialApplication").invoke(null);
+            if (app == null)
+                throw new IllegalStateException("Static initialization of Applications must be on main thread.");
+        } catch (final Exception e) {
+            try {
+                app = (AppApplication) Class.forName("android.app.ActivityThread").getMethod("currentApplication").invoke(null);
+            } catch (final Exception ex) {
+            }
+        } finally {
+            INSTANCE = app;
+        }
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mIns = this;
         queues = Volley.newRequestQueue(getApplicationContext());
     }
 
@@ -30,7 +45,7 @@ public class AppApplication extends Application {
     }
 
     public static AppApplication getInstance() {
-        return mIns;
+        return INSTANCE;
     }
 
     /**

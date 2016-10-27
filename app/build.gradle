@@ -28,4 +28,5 @@ dependencies {
     compile project(path: ':slidemenu')
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.yalantis:ucrop:2.2.0-native'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
 }

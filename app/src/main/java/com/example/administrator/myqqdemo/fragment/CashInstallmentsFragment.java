@@ -2,6 +2,7 @@ package com.example.administrator.myqqdemo.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -25,6 +26,7 @@ import com.example.myqqdemo.R;
  */
 public class CashInstallmentsFragment extends BaseFragment implements OnClickListener {
     private Context mContext;
+    private RecyclerView mRecycleView;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class CashInstallmentsFragment extends BaseFragment implements OnClickLis
     @Override
     protected View onInitView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_cash_installments, null);
+        mRecycleView = (RecyclerView) view.findViewById(R.id.recycle_view);
         return view;
     }
 
