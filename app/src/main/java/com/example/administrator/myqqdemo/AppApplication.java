@@ -38,6 +38,7 @@ public class AppApplication extends Application {
     public void onCreate() {
         super.onCreate();
         queues = Volley.newRequestQueue(getApplicationContext());
+        MultiTypeInstaller.install();
     }
 
     public static RequestQueue getHttpQueues() {

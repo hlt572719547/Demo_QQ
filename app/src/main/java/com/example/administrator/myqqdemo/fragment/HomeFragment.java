@@ -34,6 +34,21 @@ public class HomeFragment extends BaseFragment implements OnClickListener {
     }
 
     @Override
+    protected int getLayoutResId() {
+        return R.layout.fragment_home;
+    }
+
+    @Override
+    protected void onInitView(View view) {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    @Override
     public void onStart() {
         super.onStart();
     }
@@ -41,17 +56,6 @@ public class HomeFragment extends BaseFragment implements OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
-    }
-
-    @Override
-    protected View onInitView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, null);
-        return view;
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 
     @Override

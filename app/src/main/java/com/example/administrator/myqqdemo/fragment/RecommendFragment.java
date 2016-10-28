@@ -21,13 +21,17 @@ public class RecommendFragment extends BaseFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-       // initView();
+
     }
 
     @Override
-    protected View onInitView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_recommed, null);
-        return view;
+    protected int getLayoutResId() {
+        return R.layout.fragment_recommed;
+    }
+
+    @Override
+    protected void onInitView(View view) {
+
     }
 
     @Override

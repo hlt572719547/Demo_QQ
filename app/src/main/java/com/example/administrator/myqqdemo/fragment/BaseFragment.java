@@ -19,6 +19,9 @@ import com.example.myqqdemo.R;
  * @date 2016-7-19 上午10:33:47
  */
 public abstract class BaseFragment extends Fragment {
+
+	protected View view = null;
+
     // 回调不显示在屏幕上时会被调用
 	@Override
 	public void onDestroyView() {
@@ -33,16 +36,10 @@ public abstract class BaseFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		if (view != null) {
-			return view;
-		}
-		view = onInitView(inflater, container, savedInstanceState);
+		view = inflater.inflate(getLayoutResId(), container, false);
+		onInitView(view);
 		return view;
 	}
-
-	protected abstract View onInitView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState);
-
-	protected View view = null;
 
 	public void setHeader(int title) {
 		((TextView)view.findViewById(R.id.title)).setText(getResources().getString(title));
@@ -56,6 +53,10 @@ public abstract class BaseFragment extends Fragment {
 	}
 
 	public void showToastMsg(String msg) {
-		Toast.makeText(getActivity(), msg, Toast.LENGTH_LONG).show();
+		Toast.makeText(getContext(), msg, Toast.LENGTH_LONG).show();
 	}
+
+	protected  abstract int getLayoutResId();
+
+	protected abstract void onInitView(View view);
 }
