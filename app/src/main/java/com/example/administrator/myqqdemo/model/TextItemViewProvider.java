@@ -13,7 +13,7 @@ import com.example.myqqdemo.R;
  * Time:13:11
  */
 
-public class TextNewsItemViewProvider extends ItemViewProvider<TestItem> {
+public class TextItemViewProvider extends ItemViewProvider<TestItem> {
 
 
     @Override
