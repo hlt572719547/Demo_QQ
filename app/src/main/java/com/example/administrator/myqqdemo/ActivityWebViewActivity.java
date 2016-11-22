@@ -38,8 +38,13 @@ public class ActivityWebViewActivity extends BaseActivity implements
 		setContentView(R.layout.activity_web_view);
 
 		Intent intent = getIntent();
-		URL = intent.getStringExtra("URL_KEY");
-		title = intent.getStringExtra("URL_TITLE");
+		if (intent == null) {
+			URL = "https://www.baidu.com";
+			title = "百度";
+		} else {
+			URL = intent.getStringExtra("URL_KEY");
+			title = intent.getStringExtra("URL_TITLE");
+		}
 
 		setHeader(title);
 		initView();
