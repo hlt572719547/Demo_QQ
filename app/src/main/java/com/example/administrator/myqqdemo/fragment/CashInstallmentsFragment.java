@@ -9,8 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.example.administrator.myqqdemo.InitView.StatusViewLayout;
-import com.example.administrator.myqqdemo.InitView.pulltorefresh.PullToRefresh;
 import com.example.administrator.myqqdemo.adapter.MultiTypeAdapter;
 import com.example.administrator.myqqdemo.adapter.wrapper.HeaderAndFooterWrapper;
 import com.example.administrator.myqqdemo.adapter.wrapper.LoadMoreWrapper;
@@ -29,8 +27,8 @@ import java.util.List;
  */
 public class CashInstallmentsFragment<E extends Item> extends BaseFragment implements OnClickListener {
     private RecyclerView mRecycleView;
-    private StatusViewLayout mStatusViewLayout;
-    private PullToRefresh mPullToRefresh;
+    //private StatusViewLayout mStatusViewLayout;
+    //private PullToRefresh mPullToRefresh;
 
     private List<E> mItems;
     private HeaderAndFooterWrapper mHeaderAndFooterWrapper;
@@ -67,7 +65,7 @@ public class CashInstallmentsFragment<E extends Item> extends BaseFragment imple
         mRecycleView.setLayoutManager(new LinearLayoutManager(getContext()));
         mRecycleView.setAdapter(mAdapter);
 
-        mPullToRefresh = (PullToRefresh) view.findViewById(R.id.pull_to_refresh);
+        /*mPullToRefresh = (PullToRefresh) view.findViewById(R.id.pull_to_refresh);
         mPullToRefresh.setPullUpEnable(false);
         mPullToRefresh.setListener(new PullToRefresh.OnRefreshListener() {
             @Override
@@ -86,7 +84,7 @@ public class CashInstallmentsFragment<E extends Item> extends BaseFragment imple
                 mStatusViewLayout.showLoading();
 
             }
-        });
+        });*/
     }
 
     @Override
