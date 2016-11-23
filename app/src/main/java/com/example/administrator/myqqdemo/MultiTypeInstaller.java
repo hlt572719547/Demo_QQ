@@ -2,7 +2,7 @@ package com.example.administrator.myqqdemo;
 
 import com.example.administrator.myqqdemo.adapter.MultiTypePool;
 import com.example.administrator.myqqdemo.model.TestItem;
-import com.example.administrator.myqqdemo.model.TextNewsItemViewProvider;
+import com.example.administrator.myqqdemo.model.TextItemViewProvider;
 
 /**
  * Created by _SOLID
@@ -14,6 +14,6 @@ import com.example.administrator.myqqdemo.model.TextNewsItemViewProvider;
 public class MultiTypeInstaller {
     public static void install() {
 
-        MultiTypePool.register(TestItem.class, new TextNewsItemViewProvider());
+        MultiTypePool.register(TestItem.class, new TextItemViewProvider());
     }
 }
