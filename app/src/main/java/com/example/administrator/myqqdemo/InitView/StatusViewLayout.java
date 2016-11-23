@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.example.administrator.myqqdemo.InitView.loading.LVCircularZoom;
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 
 /**

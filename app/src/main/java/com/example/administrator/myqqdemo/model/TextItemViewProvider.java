@@ -4,7 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.example.administrator.myqqdemo.adapter.ItemViewProvider;
 import com.example.administrator.myqqdemo.adapter.ViewHolder;
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 
 /**

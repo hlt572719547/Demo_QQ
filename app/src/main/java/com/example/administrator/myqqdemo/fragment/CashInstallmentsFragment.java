@@ -14,7 +14,7 @@ import com.example.administrator.myqqdemo.adapter.wrapper.HeaderAndFooterWrapper
 import com.example.administrator.myqqdemo.adapter.wrapper.LoadMoreWrapper;
 import com.example.administrator.myqqdemo.fragment.BaseFragment;
 import com.example.administrator.myqqdemo.model.Item;
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 import java.util.ArrayList;
 import java.util.List;

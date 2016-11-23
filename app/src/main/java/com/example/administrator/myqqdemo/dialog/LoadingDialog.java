@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 public class LoadingDialog extends ProgressDialog {
 

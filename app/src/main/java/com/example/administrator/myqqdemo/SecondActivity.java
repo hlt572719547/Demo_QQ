@@ -2,7 +2,7 @@ package com.example.administrator.myqqdemo;
 
 import android.os.Bundle;
 
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 /**
  * Created by Administrator on 2016/9/20.

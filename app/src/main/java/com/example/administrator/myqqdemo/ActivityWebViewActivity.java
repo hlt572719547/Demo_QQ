@@ -15,7 +15,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import com.example.administrator.myqqdemo.dialog.CustomAlertDialogFactory;
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 
 /**

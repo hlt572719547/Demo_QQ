@@ -12,7 +12,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 public class CustomAlertDialog extends AlertDialog {
 

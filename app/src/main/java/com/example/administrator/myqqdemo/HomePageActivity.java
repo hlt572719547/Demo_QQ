@@ -26,7 +26,7 @@ import com.example.administrator.myqqdemo.fragment.CashInstallmentsFragment;
 import com.example.administrator.myqqdemo.fragment.HomeFragment;
 import com.example.administrator.myqqdemo.fragment.RecommendFragment;
 import com.example.administrator.myqqdemo.util.ActivityUtil;
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 

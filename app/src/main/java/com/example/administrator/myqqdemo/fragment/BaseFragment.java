@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 /**
  * =================================================================

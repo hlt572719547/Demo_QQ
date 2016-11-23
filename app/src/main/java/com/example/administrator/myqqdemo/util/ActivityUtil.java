@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 
 /**

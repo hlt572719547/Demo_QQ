@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myqqdemo">
+    package="com.example.administrator.myqqdemo">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,13 +11,13 @@
     <uses-permission android:name="android.permission.READ_SETTINGS" />
 
     <application
-        android:name="com.example.administrator.myqqdemo.AppApplication"
+        android:name=".AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.administrator.myqqdemo.HomePageActivity"
+        <activity android:name=".HomePageActivity"
             android:theme="@style/Theme.BackgroundTranslucent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +26,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.administrator.myqqdemo.ActivityWebViewActivity">
+        <activity android:name=".ActivityWebViewActivity">
         </activity>
-        <activity android:name="com.example.administrator.myqqdemo.FirstActivity">
+        <activity android:name=".FirstActivity">
         </activity>
-        <activity android:name="com.example.administrator.myqqdemo.SecondActivity">
+        <activity android:name=".SecondActivity">
         </activity>
-        <activity android:name="com.example.administrator.myqqdemo.ThirdActivity">
+        <activity android:name=".ThirdActivity">
         </activity>
     </application>
 

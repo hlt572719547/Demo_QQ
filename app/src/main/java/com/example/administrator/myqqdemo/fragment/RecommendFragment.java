@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.administrator.myqqdemo.fragment.BaseFragment;
-import com.example.myqqdemo.R;
+import com.example.administrator.myqqdemo.R;
 
 /**
  * @ClassName: RecommendFragment 
